@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malicious Website Blocker</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image:url('https://i.pinimg.com/1200x/4b/62/06/4b62063e6f30761a422327aadaee859d.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* 30% fade */
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Keep content visible above overlay */
+    body > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #111;
+      padding: 40px 16px;
+      text-align: center;
+      border-bottom: 2px solid #0f0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #fff;
+      letter-spacing: 2px;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    header h1:hover {
+      color: #0f0;
+      text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #bbb;
+    }
+
+    .section {
+      padding: 30px 16px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 16px;
+      font-size: 1.6rem;
+      border-left: 4px solid #fff;
+      padding-left: 10px;
+      transition: border-color 0.3s ease;
+    }
+
+    h2:hover {
+      border-color: #0f0;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #333;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #0f0;
+      box-shadow: 0 0 10px #0f0;
+    }
+
+    .status {
+      font-weight: bold;
+      color: #0f0;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: border-color 0.3s ease;
+    }
+
+    .table-container:hover {
+      border-color: #0f0;
+      box-shadow: 0 0 10px #0f0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #111;
+      min-width: 600px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #333;
+      text-align: left;
+      transition: color 0.3s ease;
+    }
+
+    th {
+      background: #000;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    tr:hover td {
+      color: #0f0;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 2px solid #333;
+      transition: color 0.3s;
+    }
+
+    footer:hover {
+      color: #0f0;
+      text-shadow: 0 0 8px #0f0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card, .section {
+        padding: 20px 16px;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+    .glow-link:hover {
+        color: #0f0;
+        text-shadow: 0 0 10px #0f0;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Malicious Website Blocker</h1>
+    <p>Block the danger before it reaches your browser.</p>
+  </header>
+
+  <section class="section">
+    <h2>Project Details</h2>
+    <div class="card">
+      <p><strong>Project Name:</strong> BLOCK MALICIOUS WEBSITE</p>
+      <p><strong>Team Number:</strong> 29</p>
+      <p><strong>Start Date:</strong> 06-07-2025</p>
+      <p><strong>End Date:</strong> 09-08-2025</p>
+      <p><strong>Status:</strong> <span class="status">Complete</span></p>
+      <p><strong>Tech Stack:</strong> Python, VirusTotal API, URLScan.io API, HTML, CSS, JavaScript,</p>
+    </div>
+  </section>
+
+  <section  class="section">
+    <h2 >Project Overview</h2>
+    <div class="card">
+      <p style="font-size: 18px; color: #ddd;">
+
+The **Malicious Website Blocker** is a Python-based desktop application that enables users to detect, block, and unblock potentially dangerous websites using both local system controls and real-time threat intelligence. It integrates with **VirusTotal** and **URLScan.io** APIs to assess domain reputation from multiple perspectives, combining antivirus engine reports and sandbox-based scanning.
+<br><br>
+Suspicious domains can be blocked locally by modifying the system’s `hosts` file to redirect them to `127.0.0.1`, cutting off access at the OS level. The app enforces administrative privileges on launch and secures sensitive operations—like blocking and unblocking—behind a dynamically generated session password. Users can input domains manually or upload bulk lists for batch scanning and control.
+<br><br>
+After each action, the application automatically flushes the DNS cache to ensure changes take immediate effect. It also includes a suggestion panel to guide users with safety practices. This solution is ideal for users looking to locally manage web safety while leveraging cloud-based threat verification.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Team Members</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Employee ID</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Syed Abid</td><td>ST#IS#7656</td><td>sd.abid3695@gmail.com</td></tr>
+          <tr><td>Ambati Nandini</td><td>ST#IS#7657</td><td>nandini35006@gmail.com</td></tr>
+          <tr><td>Ande Sai Kumar</td><td>ST#IS#7658</td><td>saisolo8686@gmail.com</td></tr>
+          <tr><td>Edara Bala Naga Venkata Siva Manikanta</td><td>ST#IS#7666</td><td>baluedara2@gmail.com</td></tr>
+          <tr><td>Gonugunta Balaji</td><td>ST#IS#7668</td><td>balajigonugunta56@gmail.com</td></tr>
+          <tr><td>Kocharla Gowtham</td><td>ST#IS#7674</td><td>gowthamkocharla@gmail.com</td></tr>
+         </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Company Info</h2>
+    <div class="card">
+      <p><strong>Company Name:</strong>Supraja Technologies </p>
+      <p><strong>Location:</strong>Vijayawada, India</p>
+      <p><strong>Email:</strong>contact@suprajatechnologies.com</p>
+      <p><strong>Website:</strong><a href="https://www.suprajatechnologies.com/" class="glow-link" target="_blank" style="color:#0f0; text-decoration:underline;">Supraja Technologies</a></p>
+    </div>
+  </section>
+</body>
+</html>
