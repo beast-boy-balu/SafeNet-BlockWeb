@@ -1,0 +1,15 @@
+# Virtual envs
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# System files
+.DS_Store
+Thumbs.db
