@@ -35,3 +35,14 @@ Blocked domains are redirected to `127.0.0.1` via the system’s `hosts` file �
 ---
 
 ## Project Structure
+BlockWeb/
+├── build/
+├── dist/
+│ └── BlockWeb.exe # Executable build
+├── about.html # Project About Page
+├── icon.ico
+├── logo.png
+├── main.py # Core Application
+├── main.spec # PyInstaller build spec
+├── .venv/
+└── README.md # (You’re reading this)
